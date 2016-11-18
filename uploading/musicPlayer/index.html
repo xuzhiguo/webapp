@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1" />
+		<title>musicPlayer</title>
+		<link rel="stylesheet" href="font/iconfont.css" />
+		<link rel="stylesheet" href="css/index.css" />
+		<script type="text/javascript" src="lib/zepto/zepto.min.js" ></script>
+		<script type="text/javascript" src="lib/zepto/touch.js" ></script>
+		<script type="text/javascript" src="lib/zepto/fx.js" ></script>
+		<script type="text/javascript" src="js/index.js" ></script>
+	</head>
+	<body>
+		<header class="header">
+			<div class="part3">
+				<span class="iconfont icon-word" id="word"></span>
+				<h1>烧米音乐</h1>
+				<span class="iconfont icon-yinliang"></span>
+			</div>
+			<div class="part1">
+				<span class="iconfont icon-word" id="word"></span>
+				<h1>烧米音乐</h1>
+				<span class="iconfont icon-order playType" id="playType">
+					<div class="type">
+						<span class="iconfont icon-order" data-class="icon-order" ><b>顺序播放</b></span>
+						<span class="iconfont icon-danquxunhuan" data-class="icon-danquxunhuan" ><b>单曲循环</b></span>
+						<span class="iconfont icon-loop" data-class="icon-loop" ><b>列表循环</b></span>
+						<span class="iconfont icon-random" data-class="icon-random" ><b>随机播放</b></span>
+					</div>
+				</span>
+			</div>
+			<div class="part2">
+				<span class="iconfont icon-back" id="back"></span>
+				<input type="text" placeholder="请输入你要听的歌曲" id="keyWord" />
+				<span class="iconfont icon-view" id="search"></span>
+			</div>
+		</header>
+		<div class="content">
+			<ul class="wordList">
+				<li>如果这都不算爱</li>
+				<li>如果这都不算爱</li>
+				<li>如果这都不算爱</li>
+			</ul>
+			<ul class="songList">
+				列表空空如也~~<br />
+				快去搜索歌曲吧~
+				<!--<li>
+					<h4>给我一首歌的事件</h4>
+					<span>刘瑞琪  -《再次寻找周杰伦》</span>
+				</li>-->
+			</ul>
+			<ul class="searchList">
+				快来搜索歌曲吧~
+				<!--<li>
+					<div class="info">
+						<h4>给我一首歌的事件</h4>
+						<span>刘瑞琪  -《再次寻找周杰伦》</span>
+					</div>
+					<span class="iconfont icon-add" id="add" class="add"></span>
+				</li>-->
+			</ul>
+		</div>
+		<footer class="footer">
+			<div class="music_header">
+				<div class="song_img">
+					<img src="img/play.jpg"/>
+				</div>
+				<div class="music_info">
+					<div class="song_name">未知</div>
+					<div class="singer">未知</div>
+					<div class="range">
+						<span class="now">0:00</span>
+						<input type="range" value="0" max="100" min="0" step="1" />
+						<span class="over">0:00</span>
+					</div>
+					<div class="play_btn">
+						<span class="iconfont icon-prev"></span>
+						<span class="iconfont icon-bofang"></span>
+						<span class="iconfont icon-next"></span>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</body>
+</html>
